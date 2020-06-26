@@ -1,5 +1,5 @@
 {
-  "name": "react-overlays",
+  "name": "@cselnz/react-overlays",
   "version": "3.2.0",
   "description": "Utilities for creating robust overlay components",
   "author": {
@@ -8,7 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-bootstrap/react-overlays.git"
+    "url": "git+https://github.com/cselnz/react-overlays.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "directory": "lib"
   },
   "license": "MIT",
   "main": "lib/cjs/index.js",
@@ -52,9 +56,6 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all"
-  },
-  "publishConfig": {
-    "directory": "lib"
   },
   "release": {
     "conventionalCommits": true

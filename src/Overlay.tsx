@@ -8,6 +8,7 @@ import usePopper, {
   toModifierMap,
   Placement,
   UsePopperOptions,
+  State,
 } from './usePopper';
 import useRootClose, { RootCloseOptions } from './useRootClose';
 import useWaitForDOMRef, { DOMContainer } from './useWaitForDOMRef';
@@ -33,6 +34,7 @@ export interface OverlayProps extends TransitionCallbacks {
     placement: Placement;
     outOfBoundaries: boolean;
     scheduleUpdate: () => void;
+    state?: State;
     props: {
       ref: React.RefCallback<HTMLElement>;
       style: React.CSSProperties;
