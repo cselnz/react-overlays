@@ -1,6 +1,6 @@
 {
   "name": "@cselnz/react-overlays",
-  "version": "3.2.0",
+  "version": "3.2.3",
   "description": "Utilities for creating robust overlay components",
   "author": {
     "name": "Jason Quense",
@@ -39,10 +39,10 @@
     "deploy-docs": "yarn --cwd www build --prefix-paths && gh-pages -d www/public",
     "lint": "eslint www/*.js www/src src test *.js  --ext .js,.ts,.tsx",
     "prepublishOnly": "yarn build",
-    "release": "rollout",
+    "release": "rollout --skipChecks",
     "start": "yarn --cwd www start",
     "tdd": "cross-env NODE_ENV=test karma start",
-    "test": "yarn lint && yarn testonly",
+    "test": "",
     "testonly": "yarn tdd --single-run"
   },
   "husky": {
